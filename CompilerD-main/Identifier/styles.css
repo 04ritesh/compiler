@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+body{
+    background-color: #F9CEEE;
+    margin-top: 4%;
+    color: #a1ec90;
+}
+.h1heading{
+    font-size: 4rem;
+}
+.paragraph{
+    margin: 1% 10% 2%;
+    color: black;
+    padding: 2%;
+}
+h5{
+    text-align: left;
+}
+h3{
+    margin: 2%;
+}
+li{
+    margin: 1%;
+    text-align: left;
+    font-size: 1rem;
+}
+.botton1{
+    margin: 2%;
+}

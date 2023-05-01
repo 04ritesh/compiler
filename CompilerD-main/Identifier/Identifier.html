@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Compiler Lab Project</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+<body>
+    <div class="container-fluid">
+        <h1 class="h1heading">Valid Identifier Or Not</h1>
+        <div class="paragraph">
+            <h5>Identifier refers to name given to entities such as variables, functions, structures etc.</h5><br>
+            <h5>Identifiers must be unique. They are created to give a unique name to an entity to identify it during the execution of the program.<br>Also remember, identifier names must be different from keywords. You cannot use int as an identifier because int is a keyword.</h5>
+            <b></b><h5>Rules for Naming identifier</h5></b>
+            <ol>
+                <li>A valid identifier can have letters (both uppercase and lowercase letters), digits and underscores.</li>
+                <li>The first letter of an identifier should be either a letter or an underscore.</li>
+                <li>You cannot use keywords like int, while etc. as identifiers.
+                </li>
+            </ol>
+            <h3>Process</h3>
+            <h5>Detection of the programming language’s reserved words (aka keywords) is typically baked into the lexical analyzer (aka scanner, tokenizer, etc.) portion of the compiler. The lexical analyzer breaks the source code into tokens, and when it sees a keyword (or reserved word), it returns a token associated with that specific keyword to the parser. (In some lexical analyzers, keywords are initially internally recognized as identifiers, and are then looked up in a table of keywords, before returning the appropriate keyword token. But this approach is not typical.)</h5>
+            <h5>Detection of identifiers is similarly built into the lexical analyzer. The definition of a programming language’s valid identifiers includes a set of rules (e.g., it must begin with a letter or underscore, must be followed by a sequence of letters/digits/underscores, must not exceed some maximum length, etc.). In some lexical analyzers, new identifiers are entered into the symbol table, and subsequent occurrences of the identifier return the same identifier information to the parser, along with the identifier token. But some lexical analyzers leave symbol table management to the parser.</h5>
+            <h5>Inside the lexical analyzer, recognition of tokens is typically accomplished with an FSA (finite state automaton). An FSA is sometimes constructed using regular-expression-like statements in compiler development tool like Lex or Flex. Effectively, an FSA is a state machine, where state transitions occur on characters read from the source code by the lexical analyzer.</h5>
+            <h3>For Checking Valid Identifier Or Not Click Below</h3>
+            <div class="botton1">
+                <a class="btn btn-outline-primary btn-lg" style="text-decoration: none;" href="IdentifierCheker/identifierCheker.html" >Check</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

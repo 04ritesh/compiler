@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(163, 198, 116) , rgb(124, 183, 34));
+}
+
+.heading{
+    margin-bottom: 4px;
+    padding-bottom:20px ;
+}
+
+.container{
+    background: #f8f4e5;
+    text-align: center;
+}
+.buttons , .button1{
+    text-align: center;
+}
+
+.btn{
+    height: auto;
+    width: 600px;
+    margin: 4px;
+}
+
+div >.name{
+    margin-top: 6px;
+    text-align: center;
+    align-items: end;
+    
+}
